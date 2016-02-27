@@ -1,6 +1,6 @@
 #地址：http://anxpp.com/ 
 
-```cpp
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="UnderlineTextView">
