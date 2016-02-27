@@ -2,20 +2,37 @@
 
 ```java
 public enum SingleEnum{
-	ONE,TWO,THREE;
-	public static void main(String args[]){
-		System.out.println("for循环遍历：");
-		for(SingleEnum singleEnum : SingleEnum.values()){
-			System.out.println(singleEnum);
+	ONE(1),THREE(3){
+		@Override
+		public boolean isEven() {
+			return false;
 		}
-		System.out.println("switch的使用：");
-		SingleEnum singleEnum = SingleEnum.TWO;
-		switch(singleEnum){
-		case ONE:System.out.println("这是1");break;
-		case TWO:System.out.println("这是2");break;
-		case THREE:System.out.println("这是3");break;
-		default:System.out.println(singleEnum);break;
+	},TWO(2){
+		@Override
+		public boolean isEven() {
+			return true;
+		}
+	};
+	private int value;
+	private SingleEnum(){}
+	private SingleEnum(int value){
+		this.value = value;
+	}
+	public int getValue(){
+		return value;
+	}
+	public boolean isEven(){
+		return false;
+	}
+	public static void main(String args[]){
+		for(SingleEnum singleEnum : SingleEnum.values()){
+			System.out.println(singleEnum + ":" + singleEnum.isEven() + singleEnum.getValue());
 		}
 	}
 }
+/*输出：
+ONE:false1
+THREE:false3
+TWO:true2
+*/
 ```
