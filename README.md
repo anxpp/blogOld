@@ -1,1 +1,10 @@
 地址：http://anxpp.com/ 
+···java
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UnderlineTextView">
+        <attr name="underline_color" format="color"/>
+        <attr name="underline_height" format="dimension"/>
+    </declare-styleable>
+</resources>
+···
