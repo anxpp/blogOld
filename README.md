@@ -11,8 +11,8 @@ protected void checkWriteOperationAllowed(Session session) throws InvalidDataAcc
 ```
 ```xml
 <tx:advice id="txAdvice" transaction-manager="transactionManager">
-		<tx:attributes>
-			<tx:method name="*" propagation="REQUIRED" />
-		</tx:attributes>
-	</tx:advice>
+	<tx:attributes>
+		<tx:method name="*" propagation="REQUIRED" />
+	</tx:attributes>
+</tx:advice>
 ```
