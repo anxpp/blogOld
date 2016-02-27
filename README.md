@@ -1,9 +1,8 @@
 #地址：http://anxpp.com/ 
 
 ```java
-public interface IConstants {
-    String ONE= "one";
-    String TWO= "two";
-    String THREE= "three";
+package com.anxpp.demo;
+public enum EasySingleton{
+	ONE,TWO,THREE;
 }
 ```
