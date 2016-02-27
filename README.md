@@ -1,8 +1,7 @@
 #地址：http://anxpp.com/ 
 
 ```java
-package com.anxpp.demo;
-public enum EasySingleton{
-	ONE,TWO,THREE;
-}
+new Enum<EnumTest>("ONE",0);
+new Enum<EnumTest>("TWO",1);
+new Enum<EnumTest>("THREE",2);
 ```
