@@ -1,4 +1,5 @@
-地址：http://anxpp.com/ 
+#地址：http://anxpp.com/ 
+
 ···java
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
